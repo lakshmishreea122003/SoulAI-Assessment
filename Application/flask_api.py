@@ -21,7 +21,7 @@ MODEL_FILE_KEY = "model.pkl"
 IMAGE_FILE_KEY = "test_image.jpg"
 
 # Initialize S3 client
-s3 = boto3.client('s3', aws_access_key_id='Enter', aws_secret_access_key='Enter')
+s3 = boto3.client('s3')
 
 # Function to download from S3
 def download_from_s3(bucket_name, key):
