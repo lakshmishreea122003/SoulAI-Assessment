@@ -81,7 +81,7 @@ Streamlit app: http://localhost:8501
 - Stop and clean up when done:
 docker-compose down
 
-I do not want to expose the link to public API endpoint on this repo. Please mail lakshmishreea122003@gmail.com. I shall share the public API endpoint hosted on AWS.
+# I do not want to expose the link to public API endpoint on this repo. Please mail lakshmishreea122003@gmail.com. I shall share the public API endpoint hosted on AWS.
 
 
 
