@@ -19,6 +19,7 @@ This part involves the following steps:
 
 ### Part 2 - Data Preprocessing and Training
 [This directory](https://github.com/lakshmishreea122003/SoulAI-Assessment/tree/main/Preprocess-Train) demonstrates the data preprocessing of CIFAR-10 dataset and Training of ResNet50 model.
+'Run '
 <br>Tech Stack: TensorFlow, Keras, NumPy
 
 The Data Preprocessing part involves the follwoing:
@@ -58,6 +59,17 @@ The Model Training Steps (ResNet50) part involves the follwoing:
 - Grad-CAM – Visualizes regions of an image contributing most to the model's prediction.
 
 ### Part 4 - App Development
+[This directory] has the dockerised application built using Flask, Streamlit, Docker, AWS, pickle, Postman
+The following are the features of the app:
+- /predict endpoint takes an image as input and returns the predicted class.
+- Implemented basic authentication for API access.
+- Tested the API using Postman or CURL.
+- Streamlit for image classification UI.
+- Containerize the application using Docker.
+- Deployed the app on AWS EC2.
+
+I do not want to expose the link to public API endpoint on this repo. Please mail lakshmishreea122003@gmail.com. I shall share the public API endpoint hosted on AWS.
+
 
 
 
