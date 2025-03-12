@@ -20,7 +20,8 @@ This part involves the following steps:
 ### Part 2 - Data Preprocessing and Training
 [This directory](https://github.com/lakshmishreea122003/SoulAI-Assessment/tree/main/Preprocess-Train) demonstrates the data preprocessing of CIFAR-10 dataset and Training of ResNet50 model.
 <br>Tech Stack: TensorFlow, Keras, NumPy
-<br>The Data Preprocessing part involves the follwoing:
+
+The Data Preprocessing part involves the follwoing:
 - Load CIFAR-10 data – Split into train, validation, and test sets.
 - Normalize Images – Scale pixel values to [0,1] for better model performance.
 - Resize Images – Convert from (32,32,3) to (224,224,3) for ResNet50.
@@ -54,6 +55,7 @@ The Model Training Steps (ResNet50) part involves the follwoing:
 - Precision – Proportion of correct positive predictions.
 - Recall – Proportion of actual positives identified correctly.
 - Confusion Matrix – Shows true vs. predicted class distributions for deeper analysis.
+- Grad-CAM – Visualizes regions of an image contributing most to the model's prediction.
 
 ### Part 4 - App Development
 
