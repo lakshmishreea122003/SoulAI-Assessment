@@ -14,11 +14,7 @@ FLASK_API_URL = "https://8080-lakshmishre-soulaiasses-od2krypankz.ws-us118.gitpo
 def upload_to_s3(file):
     """Uploads a file to AWS S3."""
     try:
-        s3 = boto3.client(
-            's3',
-            aws_access_key_id='',
-            aws_secret_access_key=''
-        )
+        s3 = boto3.client('s3')
         s3.upload_fileobj(file, BUCKET_NAME, S3_FILE_PATH)
         return True
     except Exception as e:
