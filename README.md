@@ -68,6 +68,19 @@ The following are the features of the app:
 - Containerize the application using Docker.
 - Deployed the app on AWS EC2.
 
+Steps to run app
+Install Docker and Docker Compose.
+- Clone the repository:
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+- Build and run the app using Docker Compose:
+docker-compose up --build
+- Access the apps:
+Flask app: http://localhost:8080
+Streamlit app: http://localhost:8501
+- Stop and clean up when done:
+docker-compose down
+
 I do not want to expose the link to public API endpoint on this repo. Please mail lakshmishreea122003@gmail.com. I shall share the public API endpoint hosted on AWS.
 
 
