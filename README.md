@@ -59,7 +59,7 @@ The Model Training Steps (ResNet50) part involves the follwoing:
 - Grad-CAM – Visualizes regions of an image contributing most to the model's prediction.
 
 ### Part 4 - App Development
-[This directory] has the dockerised application built using Flask, Streamlit, Docker, AWS, pickle, Postman
+[This directory](https://github.com/lakshmishreea122003/SoulAI-Assessment/tree/main/Application) has the dockerised application built using Flask, Streamlit, Docker, AWS, pickle, Postman
 The following are the features of the app:
 - /predict endpoint takes an image as input and returns the predicted class.
 - Implemented basic authentication for API access.
