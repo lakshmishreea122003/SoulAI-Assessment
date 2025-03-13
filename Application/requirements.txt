@@ -5,3 +5,5 @@ streamlit==1.10.0
 numpy==1.21.2
 Pillow==8.4.0
 flask_httpauth
+Werkzeug==2.2.2
+tensorflow
