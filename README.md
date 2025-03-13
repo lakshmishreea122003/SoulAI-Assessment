@@ -74,12 +74,14 @@ The following are the features of the app:
   ### [Link](http://3.80.131.5:5000)
   The Flask API is dockerized and deployed on an AWS EC2 instance. It provides a "/predict" endpoint that accepts an image and returns the predicted class.
   ![Flask API- Postman](https://github.com/lakshmishreea122003/SoulAI-Assessment/blob/main/API.jpg)
+
   
 - Streamlit App (Runs Locally): The Streamlit app connects to the Flask API, allowing users to Enter username & password for authentication, Upload an image and Receive the predicted class from the API.
   ![Streamlit UI](https://github.com/lakshmishreea122003/SoulAI-Assessment/blob/main/StreamlitUI.jpg)
 
+
   
-Steps to run Appication(Streamlit app with flask API endpoint) [code](https://github.com/lakshmishreea122003/SoulAI-Assessment/tree/main/Application/streamlitApp)
+## Steps to run Appication(Streamlit app with flask API endpoint) [code](https://github.com/lakshmishreea122003/SoulAI-Assessment/tree/main/Application/streamlitApp)
 - Clone the Repository
   ``` bash
   git clone https://github.com/lakshmishreea122003/SoulAI-Assessment.git
@@ -94,7 +96,7 @@ Steps to run Appication(Streamlit app with flask API endpoint) [code](https://gi
   streamlit run streamlit_app.py
   ```
   
- Running the Flask API on EC2 (For Reference) [code](https://github.com/lakshmishreea122003/SoulAI-Assessment/tree/main/Application/api)
+ ## Running the Flask API on EC2 (For Reference) [code](https://github.com/lakshmishreea122003/SoulAI-Assessment/tree/main/Application/api)
  - SSH into EC2
    ``` bash
    ssh -i your-key.pem ubuntu@<your-ec2-public-ip>
