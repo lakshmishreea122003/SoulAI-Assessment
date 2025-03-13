@@ -63,7 +63,7 @@ The Model Training Steps (ResNet50) part involves the follwoing:
 The following are the features of the app:
 - /predict endpoint takes an image as input and returns the predicted class.
 - Implemented basic authentication for API access.
-- Tested the API using Postman or CURL.
+- Tested the API using Postman.
 - Streamlit for image classification UI.
 - Containerize the application using Docker.
 - Deployed the app on AWS EC2.
