@@ -112,7 +112,9 @@ The following are the features of the app:
     docker run -d -p 5000:5000 flask-app
     ``` 
   - API should now be accessible at: http://your-ec2-public-ip:5000/
- ### Note: When running the flask app, make sure to upload the model.pkl to AWS S3 bucket using [upload_data.py](https://github.com/lakshmishreea122003/SoulAI-Assessment/blob/main/Preprocess-Train/Components/upload_s3.py)
+ # Note: 
+ - By any chance if the API endpoint does not work for you, kindly mail to lakshmishreea122003@gmail.com. I might have stopped my EC2 instance. I shall restart it for you. 
+ - When running the flask app, make sure to upload the model.pkl to AWS S3 bucket using [upload_data.py](https://github.com/lakshmishreea122003/SoulAI-Assessment/blob/main/Preprocess-Train/Components/upload_s3.py)
 
 
 
