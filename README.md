@@ -70,24 +70,24 @@ The following are the features of the app:
 - Model is located in AWS S3.
 
 This app has 2 parts
-### - Flask API (Deployed on EC2): The Flask API is dockerized and deployed on an AWS EC2 instance. It provides a "http://3.80.131.5:5000/predict" endpoint that accepts an image and returns the predicted class.
+### - Flask API (Deployed on EC2): [Link](http://3.80.131.5:5000/predict)The Flask API is dockerized and deployed on an AWS EC2 instance. It provides a "/predict" endpoint that accepts an image and returns the predicted class.
 - Streamlit App (Runs Locally): The Streamlit app connects to the Flask API, allowing users to Enter username & password for authentication, Upload an image and Receive the predicted class from the API.
 
-Steps to run app
+Steps to run Appication(Streamlit app with flask API endpoint) [code](https://github.com/lakshmishreea122003/SoulAI-Assessment/tree/main/Application/streamlitApp)
 - 1. Clone the Repository
-  git clone
-  cd SoulAIAssessment
+  git clone https://github.com/lakshmishreea122003/SoulAI-Assessment.git
+  cd SoulAI-Assessment/Application/streamlitApp
 - Install Dependencies
   pip install -r requirements.txt
 - Run the Streamlit App
   streamlit run streamlit_app.py
 
- Running the Flask API on EC2 (For Reference)
+ Running the Flask API on EC2 (For Reference) [code](https://github.com/lakshmishreea122003/SoulAI-Assessment/tree/main/Application/api)
  - 1. SSH into EC2
    ssh -i your-key.pem ubuntu@<your-ec2-public-ip>
  - 2. Clone and Build the Docker Image
-   git clone <repo_url>
-   cd <repo_name>
+   git clone https://github.com/lakshmishreea122003/SoulAI-Assessment.git
+   cd SoulAI-Assessment/Application/api
    docker build -t flask-app .
   - 3. Run the Docker Container
     docker run -d -p 5000:5000 flask-app
