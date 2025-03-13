@@ -105,7 +105,7 @@ Steps to run Appication(Streamlit app with flask API endpoint) [code](https://gi
     ``` bash
     docker run -d -p 5000:5000 flask-app
     ``` bash
-  - API should now be accessible at: http://<your-ec2-public-ip>:5000/
+  - API should now be accessible at: http://your-ec2-public-ip:5000/
  ### Note: When running the flask app, make sure to upload the model.pkl to AWS S3 bucket using [upload_data.py](https://github.com/lakshmishreea122003/SoulAI-Assessment/blob/main/Preprocess-Train/Components/upload_s3.py)
 
 
