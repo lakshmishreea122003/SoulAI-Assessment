@@ -67,22 +67,32 @@ The following are the features of the app:
 - Streamlit for image classification UI.
 - Containerize the application using Docker.
 - Deployed the app on AWS EC2.
+- Model is located in AWS S3.
+
+This app has 2 parts
+### - Flask API (Deployed on EC2): The Flask API is dockerized and deployed on an AWS EC2 instance. It provides a "http://3.80.131.5:5000/predict" endpoint that accepts an image and returns the predicted class.
+- Streamlit App (Runs Locally): The Streamlit app connects to the Flask API, allowing users to Enter username & password for authentication, Upload an image and Receive the predicted class from the API.
 
 Steps to run app
-Install Docker and Docker Compose.
-- Clone the repository:
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-- Build and run the app using Docker Compose:
-docker-compose up --build
-- Access the apps:
-Flask app: http://localhost:8080
-Streamlit app: http://localhost:8501
-- Stop and clean up when done:
-docker-compose down
+- 1. Clone the Repository
+  git clone
+  cd SoulAIAssessment
+- Install Dependencies
+  pip install -r requirements.txt
+- Run the Streamlit App
+  streamlit run streamlit_app.py
 
-# I do not want to expose the link to public API endpoint on this repo. Please mail lakshmishreea122003@gmail.com. I shall share the public API endpoint hosted on AWS.
-
+ Running the Flask API on EC2 (For Reference)
+ - 1. SSH into EC2
+   ssh -i your-key.pem ubuntu@<your-ec2-public-ip>
+ - 2. Clone and Build the Docker Image
+   git clone <repo_url>
+   cd <repo_name>
+   docker build -t flask-app .
+  - 3. Run the Docker Container
+    docker run -d -p 5000:5000 flask-app
+  - API should now be accessible at: http://<your-ec2-public-ip>:5000/
+ ### Note: When running the flask app, make sure to upload the model.pkl to AWS S3 bucket using ""
 
 
 
