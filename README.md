@@ -73,7 +73,7 @@ The following are the features of the app:
 - Flask API (Deployed on EC2):
   ### [Link](http://3.80.131.5:5000)
   The Flask API is dockerized and deployed on an AWS EC2 instance. It provides a "/predict" endpoint that accepts an image and returns the predicted class.
-  ![Flask API- Postman]()
+  ![Flask API- Postman](https://github.com/lakshmishreea122003/SoulAI-Assessment/blob/main/API.jpg)
 
   
 - Streamlit App (Runs Locally): The Streamlit app connects to the Flask API, allowing users to Enter username & password for authentication, Upload an image and Receive the predicted class from the API.
